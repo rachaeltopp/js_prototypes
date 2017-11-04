@@ -38,18 +38,24 @@ eachPlaylist.prototype.totalDuration = function() {
   console.log('The total durantion is ', sumLength);
 }
 
+//create a new library
 let rachaelsLibrary = new eachLibrary('Cool Music', 'Rachael');
+
+//create a couple playlists
 let rapPlaylist = new eachPlaylist('Rap Playlist');
 let alternativePlaylist = new eachPlaylist('Alternative Playlist');
 
+// eachTrack takes in 'name', rating out of 5, and length in minutes
 let track1 = new eachTrack('8mile', 4, 3);
 let track2 = new eachTrack('Spacebound', 5, 4);
 let track3 = new eachTrack('Cool Kids', 5, 3);
 let track4 = new eachTrack('Silver and Cold', 4, 4);
 
+//add the playlists to the new library
 rachaelsLibrary.addPlaylist(rapPlaylist);
 rachaelsLibrary.addPlaylist(alternativePlaylist);
 
+//add tracks to their respective playlists
 rapPlaylist.addTrack(track1);
 rapPlaylist.addTrack(track2);
 alternativePlaylist.addTrack(track3);
