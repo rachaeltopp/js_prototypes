@@ -35,7 +35,7 @@ eachPlaylist.prototype.totalDuration = function() {
   let sumLength = this.tracks.reduce(function(total, amount) {
     return total + amount.length;
   },0)
-  console.log('The total durantion is ', sumLength);
+  console.log('The total duration is ', sumLength);
 }
 
 //create a new library
